@@ -1,0 +1,36 @@
+
+////////////////Selenium Webdriver/////////////
+WebDriver is a one of the component in selenium
+WebDriver is a java interface
+WebDriver is an API(Application Programming Interface)
+
+
+
+WebDriver(Interface of)-->RemoteWebDriver(Class)--ChromeDriver, FirefoxDriver, EdgeDriver etc
+Java will call the webdriver methods and those methods performs actions on web pages
+This is called W3C layer( Java--> WebDriver Methods-- > Web Browser)
+Hence called WebDriver is an API
+
+
+
+
+
+///////////// Environment Set up///////////
+1) Downloading jars files and attaching them to java project manually
+----> Create java project
+----> Go to selenium official website(selenium.dev)
+----> Go to download section in the top header 
+----> Click and download Java 4.18.1 
+----> Once the file is downloaded , just extract it 
+----> Select all the Jar files  from the extracted files and add as an external jars
+----> Once added all the jars are available under reference Library
+----> It's tedious job since everytime jars have a latest version >> we will have to do it manually
+
+
+
+2) Creating Maven project
+----> File>> New >> Maven Project>> Both Group Id and Artifact Id should be same>> Click on create
+
+//////// Maven Repository URL/////
+https://mvnrepository.com/
+1) Copy Selenium Java latest dependency xml snippet
