@@ -1,5 +1,7 @@
 package selenium;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -21,6 +23,7 @@ public class day3_CSSLocators {
 		driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("tshirts");//tag id>>>>   tag#id
 		
 		driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("pants"); //tag class>>>>  tag.classname 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.cssSelector("input[class='search-box-text ui-autocomplete-input']")).sendKeys("tops");//tag attribute>>>> tag[attribute="value"]
 		driver.findElement(By.cssSelector("input.search-box-text[placeholder='Search store']")).sendKeys("shirts");//tag class attribute>>>>  tag.classname[attribute="value"]
 		
